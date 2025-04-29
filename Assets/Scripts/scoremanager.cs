@@ -8,7 +8,7 @@ public class scoremanager : MonoBehaviour
     int score = 0;
     public void incrementscore(int amount)
     {
-        if (gamer.gameoverr) return;
+        if (gamer.isGameOver) return;
         score += amount;
         text.text = score.ToString();
     }
